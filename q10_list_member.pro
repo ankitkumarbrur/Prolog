@@ -1,6 +1,9 @@
 go:-write('Enter a list :'),
     createList(L),
-    printList(L).
+    printList(L),
+    write("Check an element is a member or not :"),
+    read(M),
+    is_member(M,L).
 
 enterEl(X):-
     nl, write('Enter a Element :'),
@@ -20,3 +23,5 @@ printList([H|T]):-
     write(' '),
     write(H),
     printList(T).
+
+is_member(E,L)
