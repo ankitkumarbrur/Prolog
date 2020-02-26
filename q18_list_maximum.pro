@@ -8,12 +8,13 @@ go:-
     write(M).
 
 maxlist([X|T],M):-
-    maxlist2(T,X,M2),
-    M is X.
+    maxlist(T,X,M).
 
-maxlist2([],M,M1):-!.
-maxlist2([X|T],M,M1):-
-    X > M , M1 is X,
+maxlist([],M,M):-!.
+
+maxlist([X|T],M,M2):-
+    X > M , 
+    M1 is X,
     maxlist2(T,M1,M2);
     maxlist2(T,M,M2).
 
