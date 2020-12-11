@@ -1,5 +1,6 @@
 % Write a program in PROLOG to implement towerofhanoi (N) where N represents the number of discs
 
+
 go:-
     write('Enter number of Disks : '),
     read(N),
