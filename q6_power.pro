@@ -8,9 +8,9 @@ go:-	write('Enter base :'),
 pwr(A,0,1).
 pwr(A,1,A).
 pwr(A,B,R) :- A>1,
-				B1 is B - 1,
-				pwr(A,B1,R1),
-				R is A*R1.
+	B1 is B - 1,
+	pwr(A,B1,R1),
+	R is A*R1.
 				
 
 :-initialization(go).
