@@ -25,4 +25,5 @@ printList([]):-!.
 printList([H|T]):-
     write(' '),write(H),printList(T).
 
+
 :-initialization(go).
